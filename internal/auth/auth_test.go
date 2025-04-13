@@ -10,7 +10,6 @@ import (
 )
 
 func TestPasswordCreate(t *testing.T) {
-	t.Error("intentional fail")
 	secret, err := ecdsa.GenerateKey(elliptic.P256(), rand.Reader)
 	if err != nil {
 		t.Errorf("Could not generate key secret %v", err)
